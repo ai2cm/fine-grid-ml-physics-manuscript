@@ -1,0 +1,112 @@
+baseline-10day:
+  url: gs://vcm-ml-experiments/default/2022-11-18/ml-on-fine-baseline-trial-0/fv3gfs_run
+baseline-10day-ic-0805:
+  url: gs://vcm-ml-experiments/default/2022-12-12/ml-on-fine-ic-baseline-20160805.000000-trial-0/fv3gfs_run
+baseline-10day-ic-0813:
+  url: gs://vcm-ml-experiments/default/2022-12-12/ml-on-fine-ic-baseline-20160813.000000-trial-0/fv3gfs_run
+baseline-10day-ic-0821:
+  url: gs://vcm-ml-experiments/default/2022-12-12/ml-on-fine-ic-baseline-20160821.000000-trial-0/fv3gfs_run
+baseline-10day-ic-0829:
+  url: gs://vcm-ml-experiments/default/2022-12-12/ml-on-fine-ic-baseline-20160829.000000-trial-0/fv3gfs_run
+baseline-35day:
+  url: gs://vcm-ml-experiments/default/2022-11-21/ml-on-fine-baseline-long-trial-0/fv3gfs_run
+n2f-10day-ic-0805:
+  url: gs://vcm-ml-experiments/default/2023-01-12/ml-on-fine-ic-n2f-20160805.000000-trial-0/fv3gfs_run
+n2f-10day-ic-0813:
+  url: gs://vcm-ml-experiments/default/2023-01-12/ml-on-fine-ic-n2f-20160813.000000-trial-0/fv3gfs_run
+n2f-10day-ic-0821:
+  url: gs://vcm-ml-experiments/default/2023-01-12/ml-on-fine-ic-n2f-20160821.000000-trial-0/fv3gfs_run
+n2f-10day-ic-0829:
+  url: gs://vcm-ml-experiments/default/2023-01-12/ml-on-fine-ic-n2f-20160829.000000-trial-0/fv3gfs_run
+n2f-35day:
+  url: gs://vcm-ml-experiments/default/2023-01-12/ml-on-fine-n2f-prog-rad-trial-0/fv3gfs_run
+prescribed-physics-35day:
+  url: gs://vcm-ml-experiments/default/2022-04-15/n2f-prescribe-t-nudge-apparent-sources-only-long/fv3gfs_run
+prog-10day-ic-0805:
+  url: gs://vcm-ml-experiments/default/2023-01-12/ml-on-fine-ic-prog-20160805.000000-trial-0/fv3gfs_run
+prog-10day-ic-0813:
+  url: gs://vcm-ml-experiments/default/2023-01-12/ml-on-fine-ic-prog-20160813.000000-trial-0/fv3gfs_run
+prog-10day-ic-0821:
+  url: gs://vcm-ml-experiments/default/2023-01-12/ml-on-fine-ic-prog-20160821.000000-trial-0/fv3gfs_run
+prog-10day-ic-0829:
+  url: gs://vcm-ml-experiments/default/2023-01-12/ml-on-fine-ic-prog-20160829.000000-trial-0/fv3gfs_run
+prog-10day-seed0:
+  url: gs://vcm-ml-experiments/default/2023-01-12/ml-on-fine-ensemble-prog-rad-0-trial-0/fv3gfs_run
+prog-10day-seed1:
+  url: gs://vcm-ml-experiments/default/2023-01-12/ml-on-fine-ensemble-prog-rad-1-trial-0/fv3gfs_run
+prog-10day-seed2:
+  url: gs://vcm-ml-experiments/default/2023-01-12/ml-on-fine-ensemble-prog-rad-2-trial-0/fv3gfs_run
+prog-10day-seed3:
+  url: gs://vcm-ml-experiments/default/2023-01-12/ml-on-fine-ensemble-prog-rad-3-trial-0/fv3gfs_run
+prog-10day-seed4:
+  url: gs://vcm-ml-experiments/default/2023-01-12/ml-on-fine-ensemble-prog-rad-4-trial-0/fv3gfs_run
+prog-10day-seed5:
+  url: gs://vcm-ml-experiments/default/2023-01-12/ml-on-fine-ensemble-prog-rad-5-trial-0/fv3gfs_run
+prog-10day-seed6:
+  url: gs://vcm-ml-experiments/default/2023-01-12/ml-on-fine-ensemble-prog-rad-6-trial-0/fv3gfs_run
+prog-10day-seed7:
+  url: gs://vcm-ml-experiments/default/2023-01-12/ml-on-fine-ensemble-prog-rad-7-trial-0/fv3gfs_run
+prog-10day-seed8:
+  url: gs://vcm-ml-experiments/default/2023-01-12/ml-on-fine-ensemble-prog-rad-8-trial-0/fv3gfs_run
+prog-10day-seed9:
+  url: gs://vcm-ml-experiments/default/2023-01-12/ml-on-fine-ensemble-prog-rad-9-trial-0/fv3gfs_run
+prog-35day-seed0:
+  url: gs://vcm-ml-experiments/default/2023-01-12/ml-on-fine-ensemble-prog-rad-l-0-trial-0/fv3gfs_run
+prog-35day-seed1:
+  url: gs://vcm-ml-experiments/default/2023-01-12/ml-on-fine-ensemble-prog-rad-l-1-trial-0/fv3gfs_run
+prog-35day-seed2:
+  url: gs://vcm-ml-experiments/default/2023-01-12/ml-on-fine-ensemble-prog-rad-l-2-trial-0/fv3gfs_run
+prog-35day-seed3:
+  url: gs://vcm-ml-experiments/default/2023-01-12/ml-on-fine-ensemble-prog-rad-l-3-trial-0/fv3gfs_run
+prog-35day-seed4:
+  url: gs://vcm-ml-experiments/default/2023-01-12/ml-on-fine-ensemble-prog-rad-l-4-trial-0/fv3gfs_run
+prog-35day-seed5:
+  url: gs://vcm-ml-experiments/default/2023-01-12/ml-on-fine-ensemble-prog-rad-l-5-trial-0/fv3gfs_run
+prog-35day-seed6:
+  url: gs://vcm-ml-experiments/default/2023-01-12/ml-on-fine-ensemble-prog-rad-l-6-trial-0/fv3gfs_run
+prog-35day-seed7:
+  url: gs://vcm-ml-experiments/default/2023-01-12/ml-on-fine-ensemble-prog-rad-l-7-trial-0/fv3gfs_run
+prog-35day-seed8:
+  url: gs://vcm-ml-experiments/default/2023-01-12/ml-on-fine-ensemble-prog-rad-l-8-trial-0/fv3gfs_run
+prog-35day-seed9:
+  url: gs://vcm-ml-experiments/default/2023-01-12/ml-on-fine-ensemble-prog-rad-l-9-trial-0/fv3gfs_run
+prog-noflux-seed0:
+  url: gs://vcm-ml-experiments/default/2023-01-14/ml-on-fine-ensemble-noflux-0-trial-0/fv3gfs_run
+prog-noflux-seed1:
+  url: gs://vcm-ml-experiments/default/2023-01-14/ml-on-fine-ensemble-noflux-1-trial-0/fv3gfs_run
+prog-noflux-seed2:
+  url: gs://vcm-ml-experiments/default/2023-01-14/ml-on-fine-ensemble-noflux-2-trial-0/fv3gfs_run
+prog-noflux-seed3:
+  url: gs://vcm-ml-experiments/default/2023-01-14/ml-on-fine-ensemble-noflux-3-trial-0/fv3gfs_run
+prog-noflux-seed4:
+  url: gs://vcm-ml-experiments/default/2023-01-14/ml-on-fine-ensemble-noflux-4-trial-0/fv3gfs_run
+prog-noflux-seed5:
+  url: gs://vcm-ml-experiments/default/2023-01-14/ml-on-fine-ensemble-noflux-5-trial-0/fv3gfs_run
+prog-noflux-seed6:
+  url: gs://vcm-ml-experiments/default/2023-01-14/ml-on-fine-ensemble-noflux-6-trial-0/fv3gfs_run
+prog-noflux-seed7:
+  url: gs://vcm-ml-experiments/default/2023-01-14/ml-on-fine-ensemble-noflux-7-trial-0/fv3gfs_run
+prog-noflux-seed8:
+  url: gs://vcm-ml-experiments/default/2023-01-14/ml-on-fine-ensemble-noflux-8-trial-0/fv3gfs_run
+prog-noflux-seed9:
+  url: gs://vcm-ml-experiments/default/2023-01-14/ml-on-fine-ensemble-noflux-9-trial-0/fv3gfs_run
+prog-nonudge-seed0:
+  url: gs://vcm-ml-experiments/default/2023-01-14/ml-on-fine-ensemble-nonudge-0-trial-0/fv3gfs_run
+prog-nonudge-seed1:
+  url: gs://vcm-ml-experiments/default/2023-01-14/ml-on-fine-ensemble-nonudge-1-trial-0/fv3gfs_run
+prog-nonudge-seed2:
+  url: gs://vcm-ml-experiments/default/2023-01-14/ml-on-fine-ensemble-nonudge-2-trial-0/fv3gfs_run
+prog-nonudge-seed3:
+  url: gs://vcm-ml-experiments/default/2023-01-14/ml-on-fine-ensemble-nonudge-3-trial-0/fv3gfs_run
+prog-nonudge-seed4:
+  url: gs://vcm-ml-experiments/default/2023-01-14/ml-on-fine-ensemble-nonudge-4-trial-0/fv3gfs_run
+prog-nonudge-seed5:
+  url: gs://vcm-ml-experiments/default/2023-01-14/ml-on-fine-ensemble-nonudge-5-trial-0/fv3gfs_run
+prog-nonudge-seed6:
+  url: gs://vcm-ml-experiments/default/2023-01-14/ml-on-fine-ensemble-nonudge-6-trial-0/fv3gfs_run
+prog-nonudge-seed7:
+  url: gs://vcm-ml-experiments/default/2023-01-14/ml-on-fine-ensemble-nonudge-7-trial-0/fv3gfs_run
+prog-nonudge-seed8:
+  url: gs://vcm-ml-experiments/default/2023-01-14/ml-on-fine-ensemble-nonudge-8-trial-0/fv3gfs_run
+prog-nonudge-seed9:
+  url: gs://vcm-ml-experiments/default/2023-01-14/ml-on-fine-ensemble-nonudge-9-trial-0/fv3gfs_run
