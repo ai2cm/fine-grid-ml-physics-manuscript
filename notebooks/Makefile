@@ -1,14 +1,14 @@
 run_all:
-	jupyter run figure_1_and_2.ipynb
-	jupyter run figure_3_and_4.ipynb
-	jupyter run figure_5.ipynb
-	jupyter run figure_6_and_7.ipynb
-	jupyter run figure_8_9_10.ipynb
-	jupyter run figure_11.ipynb
-	jupyter run figure_12.ipynb
-	jupyter run misc-compare-initialization-times.ipynb
-	jupyter run misc-compare-SSTs.ipynb
-	jupyter run misc-preprocess-for-rad-flux-mod
+	jupyter nbconvert --to notebook --inplace --execute figure_1_and_2.ipynb
+	jupyter nbconvert --to notebook --inplace --execute figure_3_and_4.ipynb
+	jupyter nbconvert --to notebook --inplace --execute figure_5.ipynb
+	jupyter nbconvert --to notebook --inplace --execute figure_6_and_7.ipynb
+	jupyter nbconvert --to notebook --inplace --execute figure_8_9_10.ipynb
+	jupyter nbconvert --to notebook --inplace --execute figure_11.ipynb
+	jupyter nbconvert --to notebook --inplace --execute figure_12.ipynb
+	jupyter nbconvert --to notebook --inplace --execute misc-compare-initialization-times.ipynb
+	jupyter nbconvert --to notebook --inplace --execute misc-compare-SSTs.ipynb
+	jupyter nbconvert --to notebook --inplace --execute table_1.ipynb
 
 run_%:
-	jupyter run $*.ipynb
+	jupyter nbconvert --to notebook --inplace --execute $*.ipynb
