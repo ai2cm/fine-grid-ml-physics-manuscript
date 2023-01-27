@@ -1,0 +1,116 @@
+- name: radiative_fluxes
+  config:
+    derived_output_variables: 
+      - downward_shortwave_sfc_flux_via_transmissivity
+      - net_shortwave_sfc_flux_via_transmissivity
+    model_type: dense
+    random_seed: 0
+    cache:
+      in_memory: false
+      local_download_path: train-data-download-dir
+    hyperparameters:
+      clip_config:
+        clip:
+          air_temperature:
+            start: 30
+            step: null
+            stop: null
+          specific_humidity:
+            start: 30
+            step: null
+            stop: null
+      dense_network:
+        depth: 4
+        gaussian_noise: 0.1
+        width: 128
+      input_variables:
+      - cos_zenith_angle
+      - air_temperature
+      - specific_humidity
+      - land_sea_mask
+      - surface_geopotential
+      loss:
+        loss_type: mse
+        scaling: standard
+        weight: 1.0
+      normalization_fit_samples: 500000
+      normalize_loss: true
+      optimizer_config:
+        kwargs:
+          learning_rate: 0.0000500001
+        name: Adam
+      output_limit_config:
+        limits:
+          shortwave_transmissivity_of_atmospheric_column:
+            min: 0.
+            max: 1.
+          override_for_time_adjusted_total_sky_downward_longwave_flux_at_surface:
+            min: 0.
+      output_variables:
+        - shortwave_transmissivity_of_atmospheric_column        
+        - override_for_time_adjusted_total_sky_downward_longwave_flux_at_surface
+      training_loop:
+        batch_size: 512
+        epochs: 400
+        in_memory: true
+        shuffle_buffer_size: 50000
+      weights: null
+    sample_dim_name: sample
+- name: radiative_fluxes_40e
+  config:
+    derived_output_variables: 
+      - downward_shortwave_sfc_flux_via_transmissivity
+      - net_shortwave_sfc_flux_via_transmissivity
+    model_type: dense
+    random_seed: 0
+    cache:
+      in_memory: false
+      local_download_path: train-data-download-dir
+    hyperparameters:
+      clip_config:
+        clip:
+          air_temperature:
+            start: 30
+            step: null
+            stop: null
+          specific_humidity:
+            start: 30
+            step: null
+            stop: null
+      dense_network:
+        depth: 4
+        gaussian_noise: 0.1
+        width: 128
+      input_variables:
+      - cos_zenith_angle
+      - air_temperature
+      - specific_humidity
+      - land_sea_mask
+      - surface_geopotential
+      loss:
+        loss_type: mse
+        scaling: standard
+        weight: 1.0
+      normalization_fit_samples: 500000
+      normalize_loss: true
+      optimizer_config:
+        kwargs:
+          learning_rate: 0.0000500001
+        name: Adam
+      output_limit_config:
+        limits:
+          shortwave_transmissivity_of_atmospheric_column:
+            min: 0.
+            max: 1.
+          override_for_time_adjusted_total_sky_downward_longwave_flux_at_surface:
+            min: 0.
+      output_variables:
+        - shortwave_transmissivity_of_atmospheric_column        
+        - override_for_time_adjusted_total_sky_downward_longwave_flux_at_surface
+      training_loop:
+        batch_size: 512
+        epochs: 40
+        in_memory: true
+        shuffle_buffer_size: 50000
+      weights: null
+    sample_dim_name: sample
