@@ -1,0 +1,630 @@
+- name: model0
+  config:
+    model_type: dense
+    random_seed: 0
+    cache:
+      in_memory: false
+      local_download_path: null
+    derived_output_variables: []
+    output_transforms:
+      - name: Q2_flux_from_Q2_tendency
+    hyperparameters:
+      callbacks:
+      - kwargs: {}
+        name: WandbCallback
+      clip_config:
+        clip:
+          air_temperature:
+            start: 30
+            step: null
+            stop: null
+          specific_humidity:
+            start: 30
+            step: null
+            stop: null
+      dense_network:
+        depth: 4
+        gaussian_noise: 0.1
+        kernel_regularizer:
+          kwargs: {}
+          name: none
+        spectral_normalization: false
+        width: 128
+      input_variables:
+      - cos_zenith_angle
+      - air_temperature
+      - specific_humidity
+      - land_sea_mask
+      - surface_geopotential
+      - latent_heat_flux
+      - sensible_heat_flux
+      loss:
+        loss_type: mse
+        scaling: standard
+        weight: 1.0
+      normalization_fit_samples: 500000
+      normalize_loss: true
+      optimizer_config:
+        kwargs:
+          learning_rate: 0.0000500001
+        learning_rate_schedule: null
+        name: Adam
+      output_limit_config:
+        limits: {}
+      output_variables:
+      - Q1
+      - Q2
+      training_loop:
+        batch_size: 512
+        epochs: 400
+        in_memory: true
+        shuffle_buffer_size: 50000
+      weights: null
+    sample_dim_name: sample
+- name: model1
+  config:
+    model_type: dense
+    random_seed: 1
+    cache:
+      in_memory: false
+      local_download_path: null
+    derived_output_variables: []
+    output_transforms:
+      - name: Q2_flux_from_Q2_tendency
+    hyperparameters:
+      callbacks:
+      - kwargs: {}
+        name: WandbCallback
+      clip_config:
+        clip:
+          air_temperature:
+            start: 30
+            step: null
+            stop: null
+          specific_humidity:
+            start: 30
+            step: null
+            stop: null
+      dense_network:
+        depth: 4
+        gaussian_noise: 0.1
+        kernel_regularizer:
+          kwargs: {}
+          name: none
+        spectral_normalization: false
+        width: 128
+      input_variables:
+      - cos_zenith_angle
+      - air_temperature
+      - specific_humidity
+      - land_sea_mask
+      - surface_geopotential
+      - latent_heat_flux
+      - sensible_heat_flux
+      loss:
+        loss_type: mse
+        scaling: standard
+        weight: 1.0
+      normalization_fit_samples: 500000
+      normalize_loss: true
+      optimizer_config:
+        kwargs:
+          learning_rate: 0.0000500001
+        learning_rate_schedule: null
+        name: Adam
+      output_limit_config:
+        limits: {}
+      output_variables:
+      - Q1
+      - Q2
+      training_loop:
+        batch_size: 512
+        epochs: 400
+        in_memory: true
+        shuffle_buffer_size: 50000
+      weights: null
+    sample_dim_name: sample
+- name: model2
+  config:
+    model_type: dense
+    random_seed: 2
+    cache:
+      in_memory: false
+      local_download_path: null
+    derived_output_variables: []
+    output_transforms:
+      - name: Q2_flux_from_Q2_tendency
+    hyperparameters:
+      callbacks:
+      - kwargs: {}
+        name: WandbCallback
+      clip_config:
+        clip:
+          air_temperature:
+            start: 30
+            step: null
+            stop: null
+          specific_humidity:
+            start: 30
+            step: null
+            stop: null
+      dense_network:
+        depth: 4
+        gaussian_noise: 0.1
+        kernel_regularizer:
+          kwargs: {}
+          name: none
+        spectral_normalization: false
+        width: 128
+      input_variables:
+      - cos_zenith_angle
+      - air_temperature
+      - specific_humidity
+      - land_sea_mask
+      - surface_geopotential
+      - latent_heat_flux
+      - sensible_heat_flux
+      loss:
+        loss_type: mse
+        scaling: standard
+        weight: 1.0
+      normalization_fit_samples: 500000
+      normalize_loss: true
+      optimizer_config:
+        kwargs:
+          learning_rate: 0.0000500001
+        learning_rate_schedule: null
+        name: Adam
+      output_limit_config:
+        limits: {}
+      output_variables:
+      - Q1
+      - Q2
+      training_loop:
+        batch_size: 512
+        epochs: 400
+        in_memory: true
+        shuffle_buffer_size: 50000
+      weights: null
+    sample_dim_name: sample
+- name: model3
+  config:
+    model_type: dense
+    random_seed: 3
+    cache:
+      in_memory: false
+      local_download_path: null
+    derived_output_variables: []
+    output_transforms:
+      - name: Q2_flux_from_Q2_tendency
+    hyperparameters:
+      callbacks:
+      - kwargs: {}
+        name: WandbCallback
+      clip_config:
+        clip:
+          air_temperature:
+            start: 30
+            step: null
+            stop: null
+          specific_humidity:
+            start: 30
+            step: null
+            stop: null
+      dense_network:
+        depth: 4
+        gaussian_noise: 0.1
+        kernel_regularizer:
+          kwargs: {}
+          name: none
+        spectral_normalization: false
+        width: 128
+      input_variables:
+      - cos_zenith_angle
+      - air_temperature
+      - specific_humidity
+      - land_sea_mask
+      - surface_geopotential
+      - latent_heat_flux
+      - sensible_heat_flux
+      loss:
+        loss_type: mse
+        scaling: standard
+        weight: 1.0
+      normalization_fit_samples: 500000
+      normalize_loss: true
+      optimizer_config:
+        kwargs:
+          learning_rate: 0.0000500001
+        learning_rate_schedule: null
+        name: Adam
+      output_limit_config:
+        limits: {}
+      output_variables:
+      - Q1
+      - Q2
+      training_loop:
+        batch_size: 512
+        epochs: 400
+        in_memory: true
+        shuffle_buffer_size: 50000
+      weights: null
+    sample_dim_name: sample
+- name: model4
+  config:
+    model_type: dense
+    random_seed: 4
+    cache:
+      in_memory: false
+      local_download_path: null
+    derived_output_variables: []
+    output_transforms:
+      - name: Q2_flux_from_Q2_tendency
+    hyperparameters:
+      callbacks:
+      - kwargs: {}
+        name: WandbCallback
+      clip_config:
+        clip:
+          air_temperature:
+            start: 30
+            step: null
+            stop: null
+          specific_humidity:
+            start: 30
+            step: null
+            stop: null
+      dense_network:
+        depth: 4
+        gaussian_noise: 0.1
+        kernel_regularizer:
+          kwargs: {}
+          name: none
+        spectral_normalization: false
+        width: 128
+      input_variables:
+      - cos_zenith_angle
+      - air_temperature
+      - specific_humidity
+      - land_sea_mask
+      - surface_geopotential
+      - latent_heat_flux
+      - sensible_heat_flux
+      loss:
+        loss_type: mse
+        scaling: standard
+        weight: 1.0
+      normalization_fit_samples: 500000
+      normalize_loss: true
+      optimizer_config:
+        kwargs:
+          learning_rate: 0.0000500001
+        learning_rate_schedule: null
+        name: Adam
+      output_limit_config:
+        limits: {}
+      output_variables:
+      - Q1
+      - Q2
+      training_loop:
+        batch_size: 512
+        epochs: 400
+        in_memory: true
+        shuffle_buffer_size: 50000
+      weights: null
+    sample_dim_name: sample
+- name: model5
+  config:
+    model_type: dense
+    random_seed: 5
+    cache:
+      in_memory: false
+      local_download_path: null
+    derived_output_variables: []
+    output_transforms:
+      - name: Q2_flux_from_Q2_tendency
+    hyperparameters:
+      callbacks:
+      - kwargs: {}
+        name: WandbCallback
+      clip_config:
+        clip:
+          air_temperature:
+            start: 30
+            step: null
+            stop: null
+          specific_humidity:
+            start: 30
+            step: null
+            stop: null
+      dense_network:
+        depth: 4
+        gaussian_noise: 0.1
+        kernel_regularizer:
+          kwargs: {}
+          name: none
+        spectral_normalization: false
+        width: 128
+      input_variables:
+      - cos_zenith_angle
+      - air_temperature
+      - specific_humidity
+      - land_sea_mask
+      - surface_geopotential
+      - latent_heat_flux
+      - sensible_heat_flux
+      loss:
+        loss_type: mse
+        scaling: standard
+        weight: 1.0
+      normalization_fit_samples: 500000
+      normalize_loss: true
+      optimizer_config:
+        kwargs:
+          learning_rate: 0.0000500001
+        learning_rate_schedule: null
+        name: Adam
+      output_limit_config:
+        limits: {}
+      output_variables:
+      - Q1
+      - Q2
+      training_loop:
+        batch_size: 512
+        epochs: 400
+        in_memory: true
+        shuffle_buffer_size: 50000
+      weights: null
+    sample_dim_name: sample
+- name: model6
+  config:
+    model_type: dense
+    random_seed: 6
+    cache:
+      in_memory: false
+      local_download_path: null
+    derived_output_variables: []
+    output_transforms:
+      - name: Q2_flux_from_Q2_tendency
+    hyperparameters:
+      callbacks:
+      - kwargs: {}
+        name: WandbCallback
+      clip_config:
+        clip:
+          air_temperature:
+            start: 30
+            step: null
+            stop: null
+          specific_humidity:
+            start: 30
+            step: null
+            stop: null
+      dense_network:
+        depth: 4
+        gaussian_noise: 0.1
+        kernel_regularizer:
+          kwargs: {}
+          name: none
+        spectral_normalization: false
+        width: 128
+      input_variables:
+      - cos_zenith_angle
+      - air_temperature
+      - specific_humidity
+      - land_sea_mask
+      - surface_geopotential
+      - latent_heat_flux
+      - sensible_heat_flux
+      loss:
+        loss_type: mse
+        scaling: standard
+        weight: 1.0
+      normalization_fit_samples: 500000
+      normalize_loss: true
+      optimizer_config:
+        kwargs:
+          learning_rate: 0.0000500001
+        learning_rate_schedule: null
+        name: Adam
+      output_limit_config:
+        limits: {}
+      output_variables:
+      - Q1
+      - Q2
+      training_loop:
+        batch_size: 512
+        epochs: 400
+        in_memory: true
+        shuffle_buffer_size: 50000
+      weights: null
+    sample_dim_name: sample
+- name: model7
+  config:
+    model_type: dense
+    random_seed: 7
+    cache:
+      in_memory: false
+      local_download_path: null
+    derived_output_variables: []
+    output_transforms:
+      - name: Q2_flux_from_Q2_tendency
+    hyperparameters:
+      callbacks:
+      - kwargs: {}
+        name: WandbCallback
+      clip_config:
+        clip:
+          air_temperature:
+            start: 30
+            step: null
+            stop: null
+          specific_humidity:
+            start: 30
+            step: null
+            stop: null
+      dense_network:
+        depth: 4
+        gaussian_noise: 0.1
+        kernel_regularizer:
+          kwargs: {}
+          name: none
+        spectral_normalization: false
+        width: 128
+      input_variables:
+      - cos_zenith_angle
+      - air_temperature
+      - specific_humidity
+      - land_sea_mask
+      - surface_geopotential
+      - latent_heat_flux
+      - sensible_heat_flux
+      loss:
+        loss_type: mse
+        scaling: standard
+        weight: 1.0
+      normalization_fit_samples: 500000
+      normalize_loss: true
+      optimizer_config:
+        kwargs:
+          learning_rate: 0.0000500001
+        learning_rate_schedule: null
+        name: Adam
+      output_limit_config:
+        limits: {}
+      output_variables:
+      - Q1
+      - Q2
+      training_loop:
+        batch_size: 512
+        epochs: 400
+        in_memory: true
+        shuffle_buffer_size: 50000
+      weights: null
+    sample_dim_name: sample
+- name: model8
+  config:
+    model_type: dense
+    random_seed: 8
+    cache:
+      in_memory: false
+      local_download_path: null
+    derived_output_variables: []
+    output_transforms:
+      - name: Q2_flux_from_Q2_tendency
+    hyperparameters:
+      callbacks:
+      - kwargs: {}
+        name: WandbCallback
+      clip_config:
+        clip:
+          air_temperature:
+            start: 30
+            step: null
+            stop: null
+          specific_humidity:
+            start: 30
+            step: null
+            stop: null
+      dense_network:
+        depth: 4
+        gaussian_noise: 0.1
+        kernel_regularizer:
+          kwargs: {}
+          name: none
+        spectral_normalization: false
+        width: 128
+      input_variables:
+      - cos_zenith_angle
+      - air_temperature
+      - specific_humidity
+      - land_sea_mask
+      - surface_geopotential
+      - latent_heat_flux
+      - sensible_heat_flux
+      loss:
+        loss_type: mse
+        scaling: standard
+        weight: 1.0
+      normalization_fit_samples: 500000
+      normalize_loss: true
+      optimizer_config:
+        kwargs:
+          learning_rate: 0.0000500001
+        learning_rate_schedule: null
+        name: Adam
+      output_limit_config:
+        limits: {}
+      output_variables:
+      - Q1
+      - Q2
+      training_loop:
+        batch_size: 512
+        epochs: 400
+        in_memory: true
+        shuffle_buffer_size: 50000
+      weights: null
+    sample_dim_name: sample
+- name: model9
+  config:
+    model_type: dense
+    random_seed: 9
+    cache:
+      in_memory: false
+      local_download_path: null
+    derived_output_variables: []
+    output_transforms:
+      - name: Q2_flux_from_Q2_tendency
+    hyperparameters:
+      callbacks:
+      - kwargs: {}
+        name: WandbCallback
+      clip_config:
+        clip:
+          air_temperature:
+            start: 30
+            step: null
+            stop: null
+          specific_humidity:
+            start: 30
+            step: null
+            stop: null
+      dense_network:
+        depth: 4
+        gaussian_noise: 0.1
+        kernel_regularizer:
+          kwargs: {}
+          name: none
+        spectral_normalization: false
+        width: 128
+      input_variables:
+      - cos_zenith_angle
+      - air_temperature
+      - specific_humidity
+      - land_sea_mask
+      - surface_geopotential
+      - latent_heat_flux
+      - sensible_heat_flux
+      loss:
+        loss_type: mse
+        scaling: standard
+        weight: 1.0
+      normalization_fit_samples: 500000
+      normalize_loss: true
+      optimizer_config:
+        kwargs:
+          learning_rate: 0.0000500001
+        learning_rate_schedule: null
+        name: Adam
+      output_limit_config:
+        limits: {}
+      output_variables:
+      - Q1
+      - Q2
+      training_loop:
+        batch_size: 512
+        epochs: 400
+        in_memory: true
+        shuffle_buffer_size: 50000
+      weights: null
+    sample_dim_name: sample
