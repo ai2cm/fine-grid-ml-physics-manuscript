@@ -1,3 +1,3 @@
-[submodule "workflows/fv3net"]
-	path = workflows/fv3net
+[submodule "workflows/prognostic-runs/fv3net"]
+	path = workflows/prognostic-runs/fv3net
 	url = git@github.com:ai2cm/fv3net.git
