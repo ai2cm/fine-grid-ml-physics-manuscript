@@ -14,6 +14,7 @@ NAME="${TAG}-$(openssl rand --hex 2)"
 
 cp prognostic-run.yaml prognostic-run-compiled.yaml
 yq -yi --arg url $MODEL_URL '.online_emulator.url[0]|=$url' prognostic-run-compiled.yaml
+yq -yi 'del(.prephysics[0])' prognostic-run-compiled.yaml
 
 argo submit --from workflowtemplate/prognostic-run \
     -p bucket=${BUCKET} \
